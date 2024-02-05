@@ -25,7 +25,7 @@ async def START_MESSAGE (client: Client, message: Message) :
     try :
         USER_FIRST_NAME = message.from_user.first_name
         if CHATID == ADMIN_TGBOT :
-            TEXT = f"<b>درود رئیس 🙌🏻 به بلیزاردشاپ خوش اومدی!❤️</b>\n\n\nشما در حال حاضر از نسخه ی <b>3.2.1</b>إBlizzard Shop</b>\n\n\nپشتیبانی @hamed7395
+            TEXT = f"<b>درود رئیس 🙌🏻 به بلیزاردشاپ خوش اومدی!❤️</b>\n\n\nشما در حال حاضر از نسخه ی <b>3.2.1</b>إBlizzard Shop</b>\n\n\nپشتیبانی @hamed7395"
             TEXT = f"درود {USER_FIRST_NAME} عزیز\nجهت آمارگیری لطفا لینک خود را ارسال کنید."
         await client.send_message(chat_id=CHATID, text=TEXT, parse_mode=enums.ParseMode.HTML) 
 
